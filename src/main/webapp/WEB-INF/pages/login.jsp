@@ -12,7 +12,7 @@
 
 <body>
 
-
+<div>
 <form method="POST" action="<%=request.getContextPath()%>/j_spring_security_check" class="box login">
 
     <fieldset class="boxBody">
@@ -27,5 +27,6 @@
         </c:if>
     </footer>
 </form>
+    </div>
 </body>
 </html>

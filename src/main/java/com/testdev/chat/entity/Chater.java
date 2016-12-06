@@ -10,7 +10,7 @@ public class Chater {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id_chater")
-    private Long idChater;
+    private int idChater;
 
     @Column(name = "login")
     private String login;
@@ -18,11 +18,11 @@ public class Chater {
     public Chater() {
     }
 
-    public Long getIdChater() {
+    public int getIdChater() {
         return idChater;
     }
 
-    public void setIdChater(Long idChater) {
+    public void setIdChater(int idChater) {
         this.idChater = idChater;
     }
 

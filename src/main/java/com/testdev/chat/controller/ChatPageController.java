@@ -9,21 +9,18 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Date;
 
-@RequestMapping("/")
-@Controller
+@RequestMapping
+@RestController
 public class ChatPageController {
 
     @Autowired
     private MessageService messageService;
 
 
-//    @RequestMapping(method = RequestMethod.GET)
-//    public List<Message> showMessage() {
-//        return messageService.readAll();
-//    }
 
     @RequestMapping(method = RequestMethod.POST)
     public Message saveMessage(@RequestBody Message message) {
@@ -40,8 +37,5 @@ public class ChatPageController {
         messageService.save(messageOut);
         return messageOut;
     }
-//    @RequestMapping(method = RequestMethod.POST)
-//    public List<Message> findSomeMessage(@RequestBody int offset) {
-//        return messageService.readSomeMessage(offset);
-//    }
+
 }

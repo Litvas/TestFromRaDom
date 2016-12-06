@@ -10,7 +10,7 @@ public class Message {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id_message")
-    private Long idMessage;
+    private int idMessage;
 
     @Column(name = "date_of_sending")
     private Date dateOfSending;
@@ -25,11 +25,11 @@ public class Message {
     public Message() {
     }
 
-    public Long getIdMessage() {
+    public int getIdMessage() {
         return idMessage;
     }
 
-    public void setIdMessage(Long idMessage) {
+    public void setIdMessage(int idMessage) {
         this.idMessage = idMessage;
     }
 

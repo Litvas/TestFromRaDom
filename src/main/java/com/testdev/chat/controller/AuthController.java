@@ -13,13 +13,13 @@ public class AuthController {
         return "login";
     }
 
-    @RequestMapping("/index")
-    public String printWelcome() {
-        return "index";
-    }
-
     @RequestMapping("/deny")
     public String accessDenided() {
         return "accessdenided";
+    }
+
+    @RequestMapping("/chat")
+    public String printWelcome() {
+        return "index";
     }
 }
