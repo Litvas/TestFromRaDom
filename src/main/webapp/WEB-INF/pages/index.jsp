@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css" />
-    <link href="../frontend/assets/style.css" rel="stylesheet" type="text/css" />
+    <link href="${pageContext.request.contextPath}/assets/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body ng-app="chatApp">
 <div ng-controller="ChatCtrl" class="container">
@@ -20,12 +20,12 @@
     </p>
 </div>
 
-<script src="/libs/sockjs/sockjs.min.js" type="text/javascript"></script>
-<script src="/libs/stomp-websocket/lib/stomp.min.js" type="text/javascript"></script>
-<script src="/libs/angular/angular.min.js"></script>
-<script src="/libs/lodash/dist/lodash.min.js"></script>
-<script src="/modules/app.js" type="text/javascript"></script>
-<script src="/modules/controllers.js" type="text/javascript"></script>
-<script src="/modules/services.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/libs/sockjs/sockjs.min.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/libs/stomp-websocket/lib/stomp.min.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/libs/angular/angular.min.js"></script>
+<script src="${pageContext.request.contextPath}/libs/lodash/dist/lodash.min.js"></script>
+<script src="${pageContext.request.contextPath}/modules/app.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/modules/controllers.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/modules/services.js" type="text/javascript"></script>
 </body>
 </html>
